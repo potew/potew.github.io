@@ -1,70 +1,72 @@
-body  {
-    background-color:#7389ae;
-    line-height: 18px;
+body {
+  background-color: #7389ae;
+  line-height: 18px;
 }
 
 #barraTopo {
-    text-align: center;
+  text-align: center;
 }
 
-#textoBio   {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 19px;
-    left: 0%;
-    margin: 35px;
-    padding: 35px;
-    position: absolute;
-    width: 50%;
+#textoBio {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 19px;
+  left: 0%;
+  margin: 35px;
+  padding: 35px;
+  position: absolute;
+  width: 50%;
 }
 
 #textoFoto {
-    display: inline-block;
-    height: 300px;
-    justify-content: space-between;
+  display: inline-block;
+  height: 300px;
+  justify-content: space-between;
 }
 
-#fotoPerfil   {
-    background-color: blue;
-    border: 5px dashed salmon;
-    margin-left: 20px;
-    margin-right: 60px;
-    padding: 15px;
-    position: absolute;
-    right: 0%;
+#fotoPerfil {
+  background-color: blue;
+  border: 5px dashed salmon;
+  margin-left: 20px;
+  margin-right: 60px;
+  padding: 15px;
+  position: absolute;
+  right: 0%;
 }
 
-h1, h2  {
-   color:#E0E0E2;
-   font-family: Tahoma, Geneva, Verdana, sans-serif;
-   letter-spacing: -1.5px;
-   text-align: center;
+h1,
+h2 {
+  color: #e0e0e2;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: -1.5px;
+  text-align: center;
 }
 
 #skills {
-    background-color: coral;
-    border-width: 3px;
-    margin: 50px;
-    padding: 30px;
+  background-color: coral;
+  border-width: 3px;
+  margin: 50px;
+  padding: 30px;
 }
 
 #skills li:nth-child(odd) {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-h4, li  {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 19px;
-    color:rgb(18, 18, 182);
+h4,
+li {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 19px;
+  color: rgb(18, 18, 182);
 }
 
-.miscText   {
-    color:#E0E0E2;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    list-style: none;
+.miscText {
+  color: #e0e0e2;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  list-style: none;
 }
-#nacionalidade  {  
-    color: green;
- }
-#naturalidade  {
-     color: red;
- }
+#nacionalidade {
+  color: green;
+}
+#naturalidade {
+  color: red;
+}
