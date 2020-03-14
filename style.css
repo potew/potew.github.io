@@ -1,74 +1,140 @@
 body {
   background-color: #7389ae;
-  line-height: 18px;
+  line-height: 20px;
+
 }
 
-#barraTopo {
+header {
   text-align: center;
 }
 
-#textoBio {
+header ul {
+  background-color: #222222;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  list-style-type: none;
+}
+
+header li a {
+  color: aliceblue;
+  display: block;
+  float: left;
+  padding: 10px;
+  text-align: center;
+}
+
+header li a:hover {
+  background-color: #444444;
+}
+
+.textoBio {
   font-family: "Courier New", Courier, monospace;
   font-size: 19px;
-  left: 0%;
-  margin: 35px;
-  padding: 35px;
-  position: absolute;
-  width: 50%;
+  width: 40%;
 }
 
-#textoFoto {
-  display: inline-block;
-  height: 300px;
-  justify-content: space-between;
+.textoFoto {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
 }
 
-#fotoPerfil {
-  background-color: blue;
-  border: 5px dashed salmon;
-  margin-left: 20px;
-  margin-right: 60px;
-  padding: 15px;
-  position: absolute;
-  right: 0%;
-}
-
-h1,
-h2 {
-  color: #e0e0e2;
+.fotoPerfil {
   background-color: black;
-  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  border: 5px dashed burlywood;
+}
+
+h1 {
+  font-family: 'Costa Ptf Regular', Tahoma, Verdana, sans-serif;
+  letter-spacing: -1.5px;
+}
+
+h2 {
+  animation-name: 'deslizaDir';
+  animation-duration: 2s;
+  color: #eeeeee;
+  background-color: black;
+  font-family: 'Costa Ptf Regular', Tahoma, Verdana, sans-serif;
   letter-spacing: -1.5px;
   line-height: 25pt;
+  overflow: hidden;
   text-align: center;
 }
 
-#skills {
-  background-color: coral;
+.skills, .projects {
+  background-color: burlywood;
   border-width: 3px;
   margin: 50px;
-  padding: 30px;
+  padding: 10px;
 }
 
-#skills li:nth-child(odd) {
+.skills li:nth-child(odd) {
   text-decoration: underline;
 }
 
-h4,
-li {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-size: 19px;
-  color: rgb(18, 18, 182);
+h4, p, li {
+  font-family: Formata, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.2em;
+  color: black;
+}
+
+.menuProjetos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.menuProjetos a {
+  display: grid;
+  font-style: italic;
+  text-align: center;
+}
+
+.imgProjetos {
+  border: 3px solid black;
+  margin: 10px;
 }
 
 .miscText {
   color: #e0e0e2;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, "Times New Roman", serif;
   list-style: none;
 }
-#nacionalidade {
-  color: green;
+
+footer {
+  color: white;
+  text-align: center;
 }
-#naturalidade {
-  color: lightsalmon;
+
+
+@media screen and (max-width:900px)
+{
+  .textoBio {
+    width: 100%;
+  }
+  .textoFoto {
+    display: flex;
+    flex-flow: column;
+  }
+  .fotoPerfil {
+    background: none;
+    border: none;
+    padding-top: 20px;
+    scale: 70%;
+  }
+}
+
+@keyframes deslizaDir {
+  from {
+    color: black;
+    margin-right: 100px;
+    line-height: 0;
+    width: 200%;
+  }
+  to {
+    margin-right: 0;
+    width: 100%;
+  }
 }
