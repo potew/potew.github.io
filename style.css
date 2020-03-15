@@ -5,6 +5,7 @@ body {
 }
 
 header {
+  animation: deslizaEsq 3s;
   text-align: center;
 }
 
@@ -52,8 +53,7 @@ h1 {
 }
 
 h2 {
-  animation-name: 'deslizaDir';
-  animation-duration: 2s;
+  animation: deslizaDir 3s;
   color: #eeeeee;
   background-color: black;
   font-family: 'Costa Ptf Regular', Tahoma, Verdana, sans-serif;
@@ -112,7 +112,8 @@ footer {
 @media screen and (max-width:900px)
 {
   .textoBio {
-    width: 100%;
+    text-align: justify;
+    width: 90%;
   }
   .textoFoto {
     display: flex;
@@ -121,20 +122,27 @@ footer {
   .fotoPerfil {
     background: none;
     border: none;
-    padding-top: 20px;
-    scale: 70%;
+    padding: 10pt;
+    scale: 60%;
   }
+  .skills, .projects {
+    border-width: 3px;
+    margin: 20px 5px;
+    padding: 2px;
+  }
+
+  .imgProjetos {
+    scale: 80%;
+  }
+
 }
 
 @keyframes deslizaDir {
-  from {
-    color: black;
-    margin-right: 100px;
-    line-height: 0;
-    width: 200%;
-  }
-  to {
-    margin-right: 0;
-    width: 100%;
-  }
+  from {margin-right: 300px;}
+  to {margin-right: 0;}
+}
+
+@keyframes deslizaEsq {
+  from {margin-left: 300px;}
+  to {margin-left: 0;}
 }

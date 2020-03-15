@@ -1,34 +1,33 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="pt-br">
 <head>
-    <meta charset="utf-8">
-    <title>About me</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>About me</title>
 </head>
-
-<body>
-    <div id=barraTopo>
-        <h1>André Duarte Palhares</h1>
-        <p><a href="#summary">Bio </a>|<a href="#skills"> Skills </a>|<a href="#links"> Links</a></p>
-    </div>
-    <div id="textoFoto">
-        <div id="textoBio">
-            <h2 id="summary">A brief summary</h2>
-            I was born in <span id="naturalidade"> <strong> Belo Horizonte / MG / Brazil </strong> </span> and live here
-            since then, in 1990. Since I was a child, I have been interested in <b> electronics and technology </b> >,
-            which made me take the Control and Automation Engineering course. I have been working since 2014 with the
-            home automation business and now I will dive into web development at <a target="_blank"
-                href="http://www.betrybe.com"> TRYBE </a>!! Other interests are: Architecture, Music, Buildings,
-            Elevators (yes, I have a simulator on my computer), (Geo)politics, Economics, Investments and Technology (s)
-            in general.
+  <body>
+    <header>
+      <h1>André Duarte Palhares</h1>
+      <ul>
+        <li><a href="#summary">Bio</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#links">Links</a></li>
+      </ul>
+    </header>
+    <article>
+      <section class="textoFoto">
+        <div class="textoBio">
+          <h2 id="summary">Um breve resumo</h2>
+          I was born in Belo Horizonte / MG / Brazil and live here since then, in 1990. Since I was a child, I have been interested in electronics and technology >, which made me take the Control and Automation Engineering course. I have been working since 2014 with the home automation business and now I will dive into web development at TRYBE !! Other interests are: Architecture, Music, Buildings, Elevators (yes, I have a simulator on my computer), (Geo)politics, Economics, Investments and Technology (s) in general. 
         </div>
-        <div id="fotoPerfil">
-            <img src="Perfil.jpg" alt="Photo of me with a ridge in the background on a sunny day" width="400px"></div>
-    </div>
-    </div>
-    <div id="skills">
-        <h2>Skills</h2>
+        <div id="fotoPerfil" class="fotoPerfil">
+          <img src="Imagens/Perfil.jpg" alt="Foto minha com uma serra ao fundo em um dia ensolarado" width="600px">
+        </div>
+      </section>
+      <section id="skills" class="skills">
+        <h2>Habilidades</h2>
         <ul>
             <li>I know how to read, write, drive...</li>
             <li>Just kidding, lol... actually I have other skills like...</li>
@@ -36,22 +35,41 @@
             <li>Local area and Wi-Fi networds</li>
             <li>Windows and Linux</li>
             <li>Home automation systems</li>
+            <li>Database management systems</li>
             <li>Delphi</li>
             <li><b>Organized (A cool <i>soft-skill</i>)</b> - which soft-skill ain't cool these days, uh?</li>
             <li>Curiosity in knowing how stuff works</li>
             <li>Portuguese is my native language</li>
-            <li>And soon HTML, CSS, JavaScript & more!!</li>
+            <li>HTML, CSS, JavaScript</li>
+            <li>And soon, both front and back-end!!</li>
         </ul>
-    </div>
-    <h2 id=links>External links</h2>
-    <ul class="miscText">
-        <li><a href="http://www.facebook.com/potew">Facebook</a></li>
-        <li><a href="http:/www.github.com/potew">GitHub</a></li>
-        <li><a href="http://www.linkedin.com/potew">LinkedIn</a></li>
-        <li>Link to a <a target="_blank" href="http://www.sensoincomum.org/">cool site you never heard of</a></li>
-        <li>Liked my pic? Click <a href="#fotoPerfil">here</a>, but not if you can't fully see it.</li>
-    </ul>
-    v1.08_en
-</body>
-
+      </section>
+      <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <p>Projetos desenvolvidos ao longo do curso da Trybe. Todos estão 100% funcionais de acordo com todos os requisitos solicitados (a maioria inclui também os requisitos bônus). Página em constante atualização!</p>
+        <div class="menuProjetos">
+          <a target="_blank" href="https://github.com/potew/potew.github.io"><img class="imgProjetos" src="Imagens/PJ01.png" width="400px">Página com tema livre</a>
+          <a target="_blank" href="https://github.com/potew/potew.github.io"><img class="imgProjetos" src="Imagens/PJ02.png" width="400px">Criador de memes</a>
+          <a target="_blank" href="https://github.com/potew/potew.github.io"><img class="imgProjetos" src="Imagens/PJ03.png" width="400px">Paleta de cores</a>
+          <a target="_blank" href="https://github.com/potew/potew.github.io"><img class="imgProjetos" src="Imagens/PJ04.png" width="400px">Lista de tarefas</a>
+          <a target="_blank" href="https://github.com/potew/potew.github.io"><img class="imgProjetos" src="Imagens/PJ05.png" width="400px">Jogo de adivinhação de cores</a>
+          <a target="_blank" href="https://github.com/potew/potew.github.io"><img class="imgProjetos" src="Imagens/PJ06.png" width="400px">Carta misteriosa</a>
+          <a target="_blank" href="https://github.com/potew/potew.github.io"><img class="imgProjetos" src="Imagens/PJ07.png" width="400px">Clone da página inicial do Facebook</a>
+        </div>
+        <div class="previewSelecionado"></div>
+      </section>
+        <h2 id="links" class=links>External links</h2>
+        <ul class="miscText">
+          <li><a href="http://www.facebook.com/potew">Facebook</a></li>
+          <li><a href="http:/www.github.com/potew">GitHub</a></li>
+          <li><a href="http://www.linkedin.com/potew">LinkedIn</a></li>
+          <li>Link to a <a target="_blank" href="http://www.sensoincomum.org/">cool site you never heard of</a></li>
+          <li>Back to the <a href="#fotoPerfil">top</a> of the page</li>
+        </ul>
+    </article>
+    <footer>
+      Best viewed on screens greater than 390 pixels width.
+    </footer>
+    v1.1
+  </body>
 </html>
