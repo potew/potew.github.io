@@ -45,6 +45,7 @@ header li a:hover {
 .fotoPerfil {
   background-color: black;
   border: 5px dashed burlywood;
+  width: 40%;
 }
 
 h1 {
@@ -113,7 +114,7 @@ footer {
 {
   .textoBio {
     text-align: justify;
-    width: 90%;
+    width: 100%;
   }
   .textoFoto {
     display: flex;
@@ -123,7 +124,7 @@ footer {
     background: none;
     border: none;
     padding: 10pt;
-    scale: 60%;
+    width: 100%;
   }
   .skills, .projects {
     border-width: 3px;
@@ -132,7 +133,7 @@ footer {
   }
 
   .imgProjetos {
-    scale: 80%;
+    scale: 50%;
   }
 
 }
