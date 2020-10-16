@@ -93,11 +93,6 @@ h4, p, li {
   text-align: center;
 }
 
-.imgProjetos {
-  border: 3px solid black;
-  margin: 10px;
-}
-
 .miscText {
   color: #e0e0e2;
   font-family: Georgia, "Times New Roman", serif;
@@ -116,16 +111,19 @@ footer {
     text-align: justify;
     width: 100%;
   }
+
   .textoFoto {
     display: flex;
     flex-flow: column;
   }
+
   .fotoPerfil {
     background: none;
     border: none;
     padding: 10pt;
     width: 100%;
   }
+
   .skills, .projects {
     border-width: 3px;
     margin: 20px 5px;
