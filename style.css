@@ -99,6 +99,11 @@ h4, p, li {
   list-style: none;
 }
 
+#contact-form input, textarea {
+  margin-bottom: 5px;
+  width: 100%;
+}
+
 footer {
   color: white;
   text-align: center;
@@ -133,7 +138,6 @@ footer {
   .imgProjetos {
     scale: 50%;
   }
-
 }
 
 @keyframes deslizaDir {

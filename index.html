@@ -28,6 +28,19 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Modernizr JS -->
     <script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- JSes para envio do form de contato EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (() => { emailjs.init('user_Jw9CfIb6vSdueqI5Su2u5')})();
+      window.onload = function() {
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+          event.preventDefault();
+          this.contact_number.value = Math.random() * 100000 | 0;
+          emailjs.sendForm('service_gqmt97i', 'template_xgxyk7j', this)
+            .then(() => console.log('Mensagem enviada!'), (error) => console.log('Erro:', error));
+        });
+      }
+    </script>
   </head>
   <body>
     <canvas id="canvas"></canvas>
@@ -124,7 +137,7 @@
                   <div class="row">
                     <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
                       <div class="hire">
-                        <h2>Em 6 meses de Trybe, mais de 30 projetos feitos! Sendo 5 em grupo e 1 em dupla.</h2>
+                        <h2>Em 11 meses de Trybe, mais de 35 projetos feitos! Sendo 5 em grupo e 2 em dupla.</h2>
                       </div>
                     </div>
                   </div>
@@ -465,19 +478,33 @@
                   <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
                     <div class="about-desc">
                       <h1>Contato</h1>
-                    </div>
-                    <p>Clique <strong><a href="mailto:potew0@gmail.com">aqui</a> para me enviar um e-mail ou confira as minhas principais redes sociais abaixo!!</strong></p><br>
-                  </div>
+                      <form id="contact-form">
+                        <input type="hidden" name="contact_number">
+                        <div>
+                          <label>Nome</label>
+                          <input type="text" name="user_name">
+                        </div>
+                        <div>
+                          <label>E-mail</label>
+                          <input type="email" name="user_email">
+                        </div>
+                        <div>
+                          <label for="message">Mensagem</label>
+                          <textarea name="message"></textarea>
+                        </div>
+                        <input type="submit" value="Enviar">
+                    </form>
                 </div>
               </div>
             </div>
           </section>
+          
           <!------------Rodapé------------->
           <section class="colorlib-footer" data-section="footer">
             <div class="colorlib-narrow-content">
               <div class="row">
                 <div class="col-md-12">
-                  <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+                  <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInRight">
                     <div class="hire">
                       <div align=center>
                         <a href="https://1drv.ms/b/s!Au4cyNOo9fz0grBSqWc9P4OLqgADUA?e=8KPNI4" class="btn-hire" style="text-align: center;">Baixe aqui uma cópia do meu currículo</a>
@@ -485,9 +512,9 @@
                           <a href="https://www.linkedin.com/in/potew/" style="color: black;" class="fa fa-linkedin"></a>
                           <a href="https://www.facebook.com/potew" style="color: black;" class="fa fa-facebook"></a>
                           <a href="https://github.com/potew" style="color: black;" class="fa fa-github"></a>
-                          <a href="https://www.instagram.com/potew1" style="color: black;" class="fa fa-instagram"></a>
+                          <a href="https://www.instagram.com/andredpalhares" style="color: black;" class="fa fa-instagram"></a>
                           <a href="https://www.quora.com/profile/potew" style="color: black;" class="fa fa-quora"></a>
-                          <a href="skype:andre.palhares" style="color: black;" class="fa fa-skype"></a>
+                          <a href="skype:andrepalhares" style="color: black;" class="fa fa-skype"></a>
                         </p>
                       </div>
                       <p style="text-align: center; margin-bottom: -20px;"><strong>Este layout é uma cortesia de <a href="https://github.com/vinaysomawat">Vinay</a></strong></p>
