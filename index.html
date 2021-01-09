@@ -35,9 +35,10 @@
       window.onload = function() {
         document.getElementById('contact-form').addEventListener('submit', function(event) {
           event.preventDefault();
-          this.contact_number.value = Math.random() * 100000 | 0;
+          this.submitBtn.disabled = true;
           emailjs.sendForm('service_gqmt97i', 'template_xgxyk7j', this)
-            .then(() => console.log('Mensagem enviada!'), (error) => console.log('Erro:', error));
+            .then(() => alert('Mensagem enviada! Obrigado pelo contato.'),
+              (error) => console.log('Erro:', error));
         });
       }
     </script>
@@ -479,7 +480,6 @@
                     <div class="about-desc">
                       <h1>Contato</h1>
                       <form id="contact-form">
-                        <input type="hidden" name="contact_number">
                         <div>
                           <label>Nome</label>
                           <input type="text" name="user_name" required>
@@ -492,7 +492,7 @@
                           <label for="message">Mensagem</label>
                           <textarea name="message" required></textarea>
                         </div>
-                        <input type="submit" value="Enviar">
+                        <input name="submitBtn" type="submit" value="Enviar">
                     </form>
                 </div>
               </div>
