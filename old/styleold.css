@@ -1,7 +1,6 @@
 body {
   background-color: #7389ae;
   line-height: 20px;
-
 }
 
 header {
@@ -33,6 +32,11 @@ header li a:hover {
   font-family: "Courier New", Courier, monospace;
   font-size: 19px;
   width: 40%;
+}
+
+#contact-form input, textarea {
+  margin-bottom: 5px;
+  width: 100%;
 }
 
 .textoFoto {
@@ -97,11 +101,6 @@ h4, p, li {
   color: #e0e0e2;
   font-family: Georgia, "Times New Roman", serif;
   list-style: none;
-}
-
-#contact-form input, textarea {
-  margin-bottom: 5px;
-  width: 100%;
 }
 
 footer {

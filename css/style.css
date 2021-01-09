@@ -1522,7 +1522,13 @@ align-items: stretch;}
     background: #f0f0f0; }
 
 #message {
-  height: 130px; }
+  height: 130px;
+}
+
+#contact-form input, textarea {
+  margin-bottom: 5px;
+  width: 100%;
+}
 
 .colorlib-nav-toggle {
   cursor: pointer;
