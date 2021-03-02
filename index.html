@@ -61,6 +61,7 @@
                   <li><a href="#" data-nav-section="skills">Habilidades</a></li>
                   <li><a href="#" data-nav-section="ind-projects">Projetos Independentes</a></li>
                   <li><a href="#" data-nav-section="projects">Projetos Trybe</a></li>
+                  <li><a href="#" data-nav-section="challenge">Desafios</a></li>
                   <li><a href="#" data-nav-section="experience">Experiências</a></li>
                   <li><a href="#" data-nav-section="schools">Formação</a></li>
                   <li><a href="#" data-nav-section="contact">Contato</a></li>
@@ -250,9 +251,9 @@
                   <div class="progress-wrap">
                     <h3 style="font-weight: 500;">Python</h3>
                     <div class="progress">
-                      <div class="progress-bar color-3" role="progressbar" aria-valuenow="40"
-                        aria-valuemin="0" aria-valuemax="100" style="width:40%">
-                        <span>40%</span>
+                      <div class="progress-bar color-3" role="progressbar" aria-valuenow="60"
+                        aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                        <span>60%</span>
                       </div>
                     </div>
                   </div>
@@ -263,12 +264,23 @@
           <!------------Projetos Independentes----------->
           <section class="colorlib-projects" data-section="ind-projects">
             <div class="colorlib-narrow-content">
+              <h1>Projetos <span style="color: #f9bf3f">independentes</span></h1>
+              <p>Contém projetos com finalidades pessoais</p>
               <div class="col-md-12 animate-box" data-animate-effect="fadeInRight">
-                <h1>Projetos <span style="color: #f9bf3f">independentes</span></h1>
-                <p>Contém projetos com finalidades pessoais</p>
-                <img src="images/PJ101.jpg" alt="Buscador de músicas no iTunes" width="100%">
-                <h3><a href='https://potew.github.io/iTunesApiSearch'>Busca na API do iTunes</a></h3>
-                <p>Busca por informações de músicas do serviço de streaming da Apple usando a API do iTunes</p>
+                <img src="images/PJ100.png" alt="Programas para controle de estoque" width="100%">
+                <h3>Aplicação de controle de estoque</h3>
+                <p>Um programa completo de controle de estoque (Win32) que trabalha com um banco de dados MySQL na Web.
+                  Já o vinha desenvolvendo desde 2016 como parte do processo de digitalização dos processos da empresa em que sou sócio.</p>
+                <p>Funcionalidades: Controle de estoque completo com registro das operações, cadastro dos produtos, relatórios de vendas,
+                integração com sistema FastCommerce, separação de usuários por nível de privilégio</p>
+              </div>
+              <div class="col-md-12 animate-box" data-animate-effect="fadeInRight">
+                <a href='https://potew.github.io/iTunesApiSearch' target="_blank">
+                  <img src="images/PJ101.jpg" alt="Buscador de músicas no iTunes" width="100%">
+                  <h3>Busca na API do iTunes</h3>
+                </a>
+                <p>Buscador feito em React para obter informações de músicas do serviço de streaming da Apple através da API do iTunes.
+                  Possui algumas implementações a se fazer!</p>
               </div>
             </div>
           </section>
@@ -285,11 +297,12 @@
               <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
                 <h3><a target="_blank" href='https://github.com/tryber/sd-03-block5-project-pixels-art/pull/9'>Paleta de cores</a></h3>
                 <img src="images/PJ03.png" alt="tela de pixels" width="100%">
-                <p>Permite fazer desenhos em pixels</p>
+                <p>Faça desenhos em pixels</p>
               </div>
               <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
                 <h3><a target="_blank" href='https://github.com/tryber/sd-03-block5-project-todo-list/pull/16'>Lista de tarefas</a></h3>
                 <img src="images/PJ04.png" alt="tela lista de tarefas" width="100%">
+                <p>Tudo na vida tem a primeira vez. Com CRUD não é diferente!</p>
               </div>
               <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
                 <h3><a target="_blank" href='https://github.com/tryber/sd-03-block5-project-color-guess/pull/8'>Adivinhe a cor</a></h3>
@@ -304,7 +317,7 @@
               <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
                 <h3><a target="_blank" href='https://github.com/tryber/sd-03-block14-project-movie-card-library-crud/pull/21'>Movie Card Library</a></h3>
                 <img src="images/PJ14.png" alt="tela " width="100%">
-                <p>Uma biblioteca de filmes em CRUD</p>
+                <p>Um gerenciador de catálogo de filmes com operações básicas</p>
               </div>
               <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
                 <h3><a target="_blank" href='https://github.com/tryber/sd-03-block15-project-frontend-online-store-07'>Front-End Online Store</a></h3>
@@ -314,7 +327,7 @@
               <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
                 <h3><a target="_blank" href='https://github.com/tryber/sd-03-block17-project-react-redux-starwars-database-filters/pull/22'>Star Wars Datatable Filters</a></h3>
                 <img src="images/PJ17.png" alt="tela " width="100%">
-                <p>Conjunto de filtros aplicados em série sobre uma tabela obtida via API</p>
+                <p>Conjunto de filtros aplicados em série sobre uma tabela obtida via API. Utiliza React com Redux.</p>
               </div>
               <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
                 <h3><a target="_blank" href='https://github.com/tryber/sd-03-recipes-app-01/'>App de receitas</a></h3>
@@ -322,13 +335,25 @@
                 <p>Permite visualizar receitas de duas APIs diferentes, bem como salvar as favoritas no LocalStorage do navegador. Feito em grupo de 4 pessoas</p>
               </div>
               <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-                <h3><a target="_blank" href='https://github.com/tryber/sd-03-trybeer-4'>App de pedidos</a></h3>
+                <h3><a target="_blank" href='https://github.com/tryber/sd-03-trybeer-4'>TryBeer</a></h3>
                 <img src="images/PJ30.png" alt="tela " width="100%">
                 <p>Um e-commerce de bebidas. Contém front-end e back-end, telas de cliente e administrador. Projeto feito em grupo.</p>
               </div>
+            </div>
+          </section>
+          <!------------Desafios----------->
+          <section class="colorlib-projects" data-section="challenge">
+            <div class="colorlib-narrow-content">
+              <h1>Desafios <span style="color: #f9bf3f">técnicos</span></h1>
+              <p>Exercícios que fiz para participar de processos seletivos</p>
               <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-                <h3><a target="_blank" href='https://github.com/potew/node-challenge-001'>API de blogs</a></h3>
-                <p>Uma API REST que provê endpoints essenciais para cadastro de usuários e posts. Utiliza Objection.js com PostgreSQL, bem como ExpressJS. Originalmente era um projeto da Trybe, mas adaptei como desafio técnico para um processo seletivo.</p>
+                <h3><a target="_blank" href='https://github.com/potew/node-challenge-001'>API de artigos</a></h3>
+                <p>Uma API REST que provê endpoints essenciais para cadastro de usuários e posts. Utiliza Objection.js com PostgreSQL, bem como ExpressJS. Originalmente era um projeto da Trybe.</p>
+              </div>
+              <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+                <h3><a target="_blank" href='https://github.com/potew/Currency-FPay'>Conversor de moedas</a></h3>
+                <img src="images/PJ201.png" alt="tela " width="100%">
+                <p>Converte entre Real, Dólar e Euro</p>
               </div>
             </div>
           </section>
